@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="js/angularplasmid.complete.min.js"></script>
+    </head>
+    <body>
+        <style>
+            @import url("http://fonts.googleapis.com/css?family=Lato:300,400,700|Donegal+One|Source+Code+Pro:400");
+            body {font-family: 'Lato';font-weight:400;}
+            .lglabel {font-size:14px}
+            .mdlabel {font-size:10px}
+            .smlabel {font-size:8px}
+            .labelline {stroke:#333;stroke-dasharray:2,2;stroke-width:2px;}
+            .white {fill:#fff}
+            .black {fill:#000}
+            .red {fill:#c00}
+            .blue {fill:#00c}
+            .green {fill:#0c0}
+            .gold {fill:#990}
+            .gray {fill:#666}
+        </style>
+        <plasmid sequencelength="1000" plasmidheight="375" plasmidwidth="375">
+            <plasmidtrack width="5" trackstyle='fill:#ccc;stroke:#999;' radius='125'>
+                <tracklabel labelstyle="font-size:20px;font-weight:700;fill:#666;" text="HDR plasmid"></tracklabel>
+
+               
+                <!-- <trackscale interval="10" style="stroke:#999;" vadjust="8"></trackscale>
+                <trackscale interval="50" showlabels="1" style="stroke:#333;stroke-width:2px" ticksize="5" vadjust="8" labelstyle="font-size:9px;fill:#999;font-weight:300" labelvadjust="15"></trackscale> -->
+
+                <!-- GFP -->
+                <trackmarker start="980" end="50" markerstyle='stroke:#000;fill:#0c0;' wadjust="10" vadjust="-5">
+                    <markerlabel type="path" text="GFP" class="smlabel white" vadjust="4"></markerlabel>
+                </trackmarker>
+
+                <!-- Arrow -->
+                <trackmarker start="122" end="150" markerstyle='stroke:#000;fill:#ff0;' arrowendlength="10" arrowendwidth="5" wadjust="10" vadjust="-5">
+                    <markerlabel text="lox" vadjust="40" hadjust="2" valign="outer" class="lglabel black" showline="1" linevadjust="-10" linevadjust="-15" lineclass="labelline"></markerlabel>
+                </trackmarker>
+
+                <!-- Puro -->
+                <trackmarker start="200" end="250" markerstyle='stroke:#000;fill:#c00;' wadjust="10" vadjust="-5">
+                    <markerlabel type="path" text="Puro" class="smlabel white" vadjust="4"></markerlabel>
+                </trackmarker>
+
+                <!-- Arrow -->
+                <trackmarker start="282" end="310" markerstyle='stroke:#000;fill:#ff0;' arrowendlength="10" arrowendwidth="5" wadjust="10" vadjust="-5">
+                    <markerlabel text="lox" vadjust="40" hadjust="2" valign="outer" class="lglabel black" showline="1" linevadjust="-10" linevadjust="-15" lineclass="labelline"></markerlabel>
+                </trackmarker>
+                
+                                
+               
+                <!-- 3ARM -->
+                <trackmarker start="400" end="450" markerstyle='stroke:#000;fill:#00f;' wadjust="10" vadjust="-5">
+                    <markerlabel text="3ARM" vadjust="40" hadjust="2" valign="outer" class="lglabel blue" showline="1" linevadjust="-10" linevadjust="-15" lineclass="labelline"></markerlabel>
+                </trackmarker>
+
+                <!-- 5ARM -->
+                <trackmarker start="600" end="650" markerstyle='stroke:#000;fill:#00f;' wadjust="10" vadjust="-5">
+                    <markerlabel text="5ARM" vadjust="40" hadjust="2" valign="outer" class="lglabel blue" showline="1" linevadjust="-10" linevadjust="-15" lineclass="labelline"></markerlabel>
+                </trackmarker>
+
+            </plasmidtrack>
+        </plasmid>
+    </body>
+</html>
